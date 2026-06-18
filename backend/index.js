@@ -9,7 +9,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:3000", // frontend ka exact origin
+    origin: [
+      "http://localhost:3000",
+      "https://admin-dashboard-xyz.vercel.app", // apna actual URL daalo
+    ], // frontend ka exact origin
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   }),
