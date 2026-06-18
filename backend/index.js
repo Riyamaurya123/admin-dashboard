@@ -11,7 +11,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://admin-dashboard-eta-one-99.vercel.app/",
+      "https://admin-dashboard-eta-one-99.vercel.app",
     ], // frontend ka exact origin
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
